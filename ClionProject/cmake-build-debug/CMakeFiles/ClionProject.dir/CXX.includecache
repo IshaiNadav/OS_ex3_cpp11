@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/main.cpp
+iostream
+-
+
