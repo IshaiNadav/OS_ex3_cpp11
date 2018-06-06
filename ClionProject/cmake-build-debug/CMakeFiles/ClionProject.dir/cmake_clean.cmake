@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ClionProject.dir/main.cpp.o"
+  "CMakeFiles/ClionProject.dir/Factory.cxx.o"
   "ClionProject.pdb"
   "ClionProject"
 )

@@ -4,6 +4,8 @@
 #include <pthread.h>
 #include <list>
 #include "Product.h"
+#include <map>
+
 
 class Factory{
 public:
@@ -35,6 +37,18 @@ public:
     
     std::list<std::pair<Product, int>> listStolenProducts();
     std::list<Product> listAvailableProducts();
+
+private:
+
+    bool factoryOpen;
+    bool returningServiceOpen;
+
+    pthread_mutex_t availableProductsLock;
+    pthread_mutex_t stolenProductsLock;
+
+    std::map<unsigned int, pthread_t> threadPool;
+
+
 
 };
 #endif // FACTORY_H_

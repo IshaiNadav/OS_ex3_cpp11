@@ -123,6 +123,33 @@ ClionProject/fast:
 	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/build
 .PHONY : ClionProject/fast
 
+Factory.o: Factory.cxx.o
+
+.PHONY : Factory.o
+
+# target to build an object file
+Factory.cxx.o:
+	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/Factory.cxx.o
+.PHONY : Factory.cxx.o
+
+Factory.i: Factory.cxx.i
+
+.PHONY : Factory.i
+
+# target to preprocess a source file
+Factory.cxx.i:
+	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/Factory.cxx.i
+.PHONY : Factory.cxx.i
+
+Factory.s: Factory.cxx.s
+
+.PHONY : Factory.s
+
+# target to generate assembly for a file
+Factory.cxx.s:
+	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/Factory.cxx.s
+.PHONY : Factory.cxx.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ClionProject"
+	@echo "... Factory.o"
+	@echo "... Factory.i"
+	@echo "... Factory.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

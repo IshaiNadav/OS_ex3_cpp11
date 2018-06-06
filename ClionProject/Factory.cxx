@@ -1,6 +1,13 @@
 #include "Factory.h"
 
-Factory::Factory(){
+Factory::Factory() :
+        factoryOpen(false),
+        returningServiceOpen(false),
+        availableProductsLock(PTHREAD_MUTEX_INITIALIZER),
+        stolenProductsLock(PTHREAD_MUTEX_INITIALIZER)
+        {
+
+
 }
 
 Factory::~Factory(){
