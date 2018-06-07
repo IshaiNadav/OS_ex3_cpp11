@@ -6,6 +6,8 @@
 #include "Product.h"
 #include <map>
 
+class ProduceArgs;//forward declaration;
+class tryBuyOneArgs;//forward declaration;
 
 class Factory{
 public:
@@ -38,17 +40,87 @@ public:
     std::list<std::pair<Product, int>> listStolenProducts();
     std::list<Product> listAvailableProducts();
 
-private:
+//private:
 
     bool factoryOpen;
     bool returningServiceOpen;
+    pthread_mutexattr_t factoryAttr;
+    pthread_mutex_t factoryLock;
+    pthread_mutexattr_t retServiceAttr;
+    pthread_mutex_t retServiceLock;
 
-    pthread_mutex_t availableProductsLock;
-    pthread_mutex_t stolenProductsLock;
+    int numOfThieves;
+    int numOfThievesWaiting;
+    pthread_cond_t thievesCond;
 
-    std::map<unsigned int, pthread_t> threadPool;
+    int numOfCompanies;
+    int numOfCompaniesWaiting;
+    pthread_cond_t companyCond;
+
+    int numOfSingleBuyers;
+    pthread_cond_t singleBuyerCond;
 
 
+    std::map<unsigned int, pthread_t> threadsMap;
+    std::list<std::pair<Product, int>> stolenProductsList;
+    std::list<Product> availableProductsList;
+
+    static void* produceWrapper(void *pa);
+    static void* tryBuyOneWrapper(void* tboa);
+    std::map<unsigned int, ProduceArgs*> produceArgMap;
+    std::map<unsigned int, tryBuyOneArgs*> tryBuyOneArgMap;
+    std::map<unsigned int, int> singleBuyerSuccessfulBuys;
 
 };
+
+
+class ProduceArgs{
+public:
+    ProduceArgs(int numOfProducts ,Product* products,Factory* inst) : numOfProducts(numOfProducts), products(products), factory(inst){}
+    virtual ~ProduceArgs() = default;
+
+    int getNumOfProducts() const {
+        return numOfProducts;
+    }
+
+    Product *getProducts() const {
+        return products;
+    }
+
+    Factory *getFactory() const {
+        return factory;
+    }
+
+private:
+    int numOfProducts;
+    Product* products;
+    Factory* factory;
+};
+
+
+class tryBuyOneArgs{
+public:
+    tryBuyOneArgs(Factory *factory) : factory(factory) {}
+
+    virtual ~tryBuyOneArgs() {}
+
+    Factory *getFactory() const {
+        return factory;
+    }
+
+private:
+    Factory* factory;
+};
+
+class CompanyBuyProductArgs{
+public:
+
+private:
+    int numOfProducts;
+    int minValue;
+    Factory* factory;
+};
+
+
+
 #endif // FACTORY_H_

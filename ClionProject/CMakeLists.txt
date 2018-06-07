@@ -3,4 +3,4 @@ project(ClionProject)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ClionProject main.cpp Factory.cxx Factory.h Product.h)
+add_executable(ClionProject main.cpp Factory.cxx Factory.h Product.h ProductArgs.h)
