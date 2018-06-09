@@ -5,5 +5,8 @@ CMakeFiles/ClionProject.dir/Factory.cxx.o: ../Factory.cxx
 CMakeFiles/ClionProject.dir/Factory.cxx.o: ../Factory.h
 CMakeFiles/ClionProject.dir/Factory.cxx.o: ../Product.h
 
-CMakeFiles/ClionProject.dir/main.cpp.o: ../main.cpp
+CMakeFiles/ClionProject.dir/test.cxx.o: ../Factory.h
+CMakeFiles/ClionProject.dir/test.cxx.o: ../Product.h
+CMakeFiles/ClionProject.dir/test.cxx.o: ../test.cxx
+CMakeFiles/ClionProject.dir/test.cxx.o: ../test_utilities.h
 

@@ -57,33 +57,9 @@ include CMakeFiles/ClionProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ClionProject.dir/flags.make
 
-CMakeFiles/ClionProject.dir/main.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClionProject.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClionProject.dir/main.cpp.o -c "/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/main.cpp"
-
-CMakeFiles/ClionProject.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/main.cpp" > CMakeFiles/ClionProject.dir/main.cpp.i
-
-CMakeFiles/ClionProject.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/main.cpp" -o CMakeFiles/ClionProject.dir/main.cpp.s
-
-CMakeFiles/ClionProject.dir/main.cpp.o.requires:
-
-.PHONY : CMakeFiles/ClionProject.dir/main.cpp.o.requires
-
-CMakeFiles/ClionProject.dir/main.cpp.o.provides: CMakeFiles/ClionProject.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/ClionProject.dir/main.cpp.o.provides
-
-CMakeFiles/ClionProject.dir/main.cpp.o.provides.build: CMakeFiles/ClionProject.dir/main.cpp.o
-
-
 CMakeFiles/ClionProject.dir/Factory.cxx.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Factory.cxx.o: ../Factory.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClionProject.dir/Factory.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClionProject.dir/Factory.cxx.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClionProject.dir/Factory.cxx.o -c "/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/Factory.cxx"
 
 CMakeFiles/ClionProject.dir/Factory.cxx.i: cmake_force
@@ -105,16 +81,40 @@ CMakeFiles/ClionProject.dir/Factory.cxx.o.provides: CMakeFiles/ClionProject.dir/
 CMakeFiles/ClionProject.dir/Factory.cxx.o.provides.build: CMakeFiles/ClionProject.dir/Factory.cxx.o
 
 
+CMakeFiles/ClionProject.dir/test.cxx.o: CMakeFiles/ClionProject.dir/flags.make
+CMakeFiles/ClionProject.dir/test.cxx.o: ../test.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClionProject.dir/test.cxx.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClionProject.dir/test.cxx.o -c "/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/test.cxx"
+
+CMakeFiles/ClionProject.dir/test.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/test.cxx.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/test.cxx" > CMakeFiles/ClionProject.dir/test.cxx.i
+
+CMakeFiles/ClionProject.dir/test.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/test.cxx.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/test.cxx" -o CMakeFiles/ClionProject.dir/test.cxx.s
+
+CMakeFiles/ClionProject.dir/test.cxx.o.requires:
+
+.PHONY : CMakeFiles/ClionProject.dir/test.cxx.o.requires
+
+CMakeFiles/ClionProject.dir/test.cxx.o.provides: CMakeFiles/ClionProject.dir/test.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/test.cxx.o.provides.build
+.PHONY : CMakeFiles/ClionProject.dir/test.cxx.o.provides
+
+CMakeFiles/ClionProject.dir/test.cxx.o.provides.build: CMakeFiles/ClionProject.dir/test.cxx.o
+
+
 # Object files for target ClionProject
 ClionProject_OBJECTS = \
-"CMakeFiles/ClionProject.dir/main.cpp.o" \
-"CMakeFiles/ClionProject.dir/Factory.cxx.o"
+"CMakeFiles/ClionProject.dir/Factory.cxx.o" \
+"CMakeFiles/ClionProject.dir/test.cxx.o"
 
 # External object files for target ClionProject
 ClionProject_EXTERNAL_OBJECTS =
 
-ClionProject: CMakeFiles/ClionProject.dir/main.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Factory.cxx.o
+ClionProject: CMakeFiles/ClionProject.dir/test.cxx.o
 ClionProject: CMakeFiles/ClionProject.dir/build.make
 ClionProject: CMakeFiles/ClionProject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/nadavbarsheshet/Documents/NADAV STUDY Electrical Engineering/semester 8 (spring 18)/OperationSystems/hw/hw3/github/OS_ex3_cpp11/ClionProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ClionProject"
@@ -125,8 +125,8 @@ CMakeFiles/ClionProject.dir/build: ClionProject
 
 .PHONY : CMakeFiles/ClionProject.dir/build
 
-CMakeFiles/ClionProject.dir/requires: CMakeFiles/ClionProject.dir/main.cpp.o.requires
 CMakeFiles/ClionProject.dir/requires: CMakeFiles/ClionProject.dir/Factory.cxx.o.requires
+CMakeFiles/ClionProject.dir/requires: CMakeFiles/ClionProject.dir/test.cxx.o.requires
 
 .PHONY : CMakeFiles/ClionProject.dir/requires
 

@@ -150,32 +150,32 @@ Factory.cxx.s:
 	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/Factory.cxx.s
 .PHONY : Factory.cxx.s
 
-main.o: main.cpp.o
+test.o: test.cxx.o
 
-.PHONY : main.o
+.PHONY : test.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/main.cpp.o
-.PHONY : main.cpp.o
+test.cxx.o:
+	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/test.cxx.o
+.PHONY : test.cxx.o
 
-main.i: main.cpp.i
+test.i: test.cxx.i
 
-.PHONY : main.i
+.PHONY : test.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/main.cpp.i
-.PHONY : main.cpp.i
+test.cxx.i:
+	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/test.cxx.i
+.PHONY : test.cxx.i
 
-main.s: main.cpp.s
+test.s: test.cxx.s
 
-.PHONY : main.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/main.cpp.s
-.PHONY : main.cpp.s
+test.cxx.s:
+	$(MAKE) -f CMakeFiles/ClionProject.dir/build.make CMakeFiles/ClionProject.dir/test.cxx.s
+.PHONY : test.cxx.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... Factory.o"
 	@echo "... Factory.i"
 	@echo "... Factory.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

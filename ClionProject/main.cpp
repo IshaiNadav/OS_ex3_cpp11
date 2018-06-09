@@ -49,6 +49,12 @@ int main()
 
     }
 
+    double arr[] = {1,2,3,4,5,6,7};
+    std::cout << "size of array is: " << sizeof(arr)/ sizeof(*arr) << std::endl;
+    std::cout << "array at index 7 is: " << arr[7] << std::endl;
+    std::cout << "array at index 8 is: " << arr[8] << std::endl;
+    std::cout << "array at index 100 is: " << arr[100] << std::endl;
+
 /* show the results - x is now 100 thanks to the second thread */
     printf("x: %d, y: %d\n", x, y);
 
